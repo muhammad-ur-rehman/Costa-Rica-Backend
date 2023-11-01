@@ -5,6 +5,7 @@ RSpec.describe 'GraphQL queries and mutations' do
     it 'returns a list of menus' do
       menu = create(:menu)
       post '/graphql', params: { query: '{ menus { name } }' }
+
       json_response = JSON.parse(response.body)
 
       expect(json_response['data']['menus']).to be_an(Array)
