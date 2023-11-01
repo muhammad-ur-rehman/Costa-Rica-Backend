@@ -18,7 +18,7 @@ module Types
     end
 
     def search_menus(name:)
-      Menu.where('name ILIKE ?', "%#{name}%")
+      Menu.where('name ILIKE :name', name: "%#{name.squish}%")
     end
   end
 end
