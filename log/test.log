@@ -1,0 +1,98 @@
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.7ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMenu Exists? (1.3ms)[0m  [1m[34mSELECT 1 AS one FROM "menus" WHERE "menus"."name" = $1 LIMIT $2[0m  [["name", "Margherita"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMenu Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "menus" WHERE "menus"."name" = $1 LIMIT $2[0m  [["name", "Margherita"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMenu Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "menus" WHERE "menus"."name" = $1 LIMIT $2[0m  [["name", "Margherita"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMenu Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "menus" WHERE "menus"."name" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMenu Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "menus" WHERE "menus"."name" = $1 LIMIT $2[0m  [["name", "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMenu Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "menus" WHERE "menus"."name" = $1 LIMIT $2[0m  [["name", "Margherita"], ["LIMIT", 1]]
+  [1m[36mMenu Create (0.7ms)[0m  [1m[32mINSERT INTO "menus" ("name", "category", "price", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Margherita"], ["category", "Pizza"], ["price", 9.99], ["created_at", "2023-11-01 15:24:21.926796"], ["updated_at", "2023-11-01 15:24:21.926796"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mMenu Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "menus" WHERE "menus"."name" = $1 LIMIT $2[0m  [["name", "Margherita"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMenu Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "menus" WHERE "menus"."name" = $1 LIMIT $2[0m  [["name", "Margherita"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMenu Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "menus" WHERE "menus"."name" = $1 LIMIT $2[0m  [["name", "Margherita"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMenu Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "menus" WHERE "menus"."name" = $1 LIMIT $2[0m  [["name", "Margherita"], ["LIMIT", 1]]
+  [1m[36mMenu Create (0.2ms)[0m  [1m[32mINSERT INTO "menus" ("name", "category", "price", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Margherita"], ["category", "Pizza"], ["price", 9.99], ["created_at", "2023-11-01 15:24:21.931989"], ["updated_at", "2023-11-01 15:24:21.931989"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mMenu Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "menus" WHERE "menus"."name" = $1 AND "menus"."id" != $2 LIMIT $3[0m  [["name", "Margherita"], ["id", 2], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMenu Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "menus" WHERE "menus"."name" = $1 LIMIT $2[0m  [["name", "Margherita"], ["LIMIT", 1]]
+  [1m[36mMenu Create (0.2ms)[0m  [1m[32mINSERT INTO "menus" ("name", "category", "price", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Margherita"], ["category", "Pizza"], ["price", 9.99], ["created_at", "2023-11-01 15:24:21.934138"], ["updated_at", "2023-11-01 15:24:21.934138"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMenu Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "menus" WHERE "menus"."name" = $1 AND "menus"."id" != $2 LIMIT $3[0m  [["name", "Updated Pizza"], ["id", 3], ["LIMIT", 1]]
+  [1m[36mMenu Update (0.3ms)[0m  [1m[33mUPDATE "menus" SET "name" = $1, "updated_at" = $2 WHERE "menus"."id" = $3[0m  [["name", "Updated Pizza"], ["updated_at", "2023-11-01 15:24:21.935111"], ["id", 3]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMenu Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "menus" WHERE "menus"."name" = $1 LIMIT $2[0m  [["name", "Margherita"], ["LIMIT", 1]]
+  [1m[36mMenu Create (0.2ms)[0m  [1m[32mINSERT INTO "menus" ("name", "category", "price", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Margherita"], ["category", "Pizza"], ["price", 9.99], ["created_at", "2023-11-01 15:24:21.937564"], ["updated_at", "2023-11-01 15:24:21.937564"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMenu Destroy (0.2ms)[0m  [1m[31mDELETE FROM "menus" WHERE "menus"."id" = $1[0m  [["id", 4]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mMenu Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "menus" WHERE "menus"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMenu Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "menus" WHERE "menus"."name" = $1 LIMIT $2[0m  [["name", "Margherita"], ["LIMIT", 1]]
+  [1m[36mMenu Create (0.2ms)[0m  [1m[32mINSERT INTO "menus" ("name", "category", "price", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Margherita"], ["category", "Pizza"], ["price", 9.99], ["created_at", "2023-11-01 15:24:21.941518"], ["updated_at", "2023-11-01 15:24:21.941518"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/graphql" for 127.0.0.1 at 2023-11-01 20:24:21 +0500
+Processing by GraphqlController#execute as HTML
+  Parameters: {"query"=>"{ menus { name } }"}
+  [1m[36mMenu Load (0.9ms)[0m  [1m[34mSELECT "menus".* FROM "menus"[0m
+Completed 200 OK in 16ms (Views: 0.1ms | ActiveRecord: 0.9ms | Allocations: 25657)
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMenu Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "menus" WHERE "menus"."name" = $1 LIMIT $2[0m  [["name", "Pizza A"], ["LIMIT", 1]]
+  [1m[36mMenu Create (0.2ms)[0m  [1m[32mINSERT INTO "menus" ("name", "category", "price", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Pizza A"], ["category", "Pizza"], ["price", 10.0], ["created_at", "2023-11-01 15:24:21.974437"], ["updated_at", "2023-11-01 15:24:21.974437"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMenu Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "menus" WHERE "menus"."name" = $1 LIMIT $2[0m  [["name", "Pizza B"], ["LIMIT", 1]]
+  [1m[36mMenu Create (0.1ms)[0m  [1m[32mINSERT INTO "menus" ("name", "category", "price", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Pizza B"], ["category", "Pizza"], ["price", 5.0], ["created_at", "2023-11-01 15:24:21.975382"], ["updated_at", "2023-11-01 15:24:21.975382"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/graphql" for 127.0.0.1 at 2023-11-01 20:24:21 +0500
+Processing by GraphqlController#execute as HTML
+  Parameters: {"query"=>"{ menus(sortByPrice: true) { name } }"}
+  [1m[36mMenu Load (1.0ms)[0m  [1m[34mSELECT "menus".* FROM "menus" ORDER BY "menus"."price" DESC[0m
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 1.0ms | Allocations: 877)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMenu Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "menus" WHERE "menus"."name" = $1 LIMIT $2[0m  [["name", "Margherita Pizza"], ["LIMIT", 1]]
+  [1m[36mMenu Create (0.2ms)[0m  [1m[32mINSERT INTO "menus" ("name", "category", "price", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Margherita Pizza"], ["category", "Pizza"], ["price", 9.99], ["created_at", "2023-11-01 15:24:21.979810"], ["updated_at", "2023-11-01 15:24:21.979810"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMenu Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "menus" WHERE "menus"."name" = $1 LIMIT $2[0m  [["name", "Pepperoni Pizza"], ["LIMIT", 1]]
+  [1m[36mMenu Create (0.2ms)[0m  [1m[32mINSERT INTO "menus" ("name", "category", "price", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Pepperoni Pizza"], ["category", "Pizza"], ["price", 9.99], ["created_at", "2023-11-01 15:24:21.980685"], ["updated_at", "2023-11-01 15:24:21.980685"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/graphql" for 127.0.0.1 at 2023-11-01 20:24:21 +0500
+Processing by GraphqlController#execute as HTML
+  Parameters: {"query"=>"{ searchMenus(name: \"Margherita\") { name } }"}
+  [1m[36mMenu Load (1.1ms)[0m  [1m[34mSELECT "menus".* FROM "menus" WHERE (name ILIKE '%Margherita%')[0m
+Completed 200 OK in 2ms (Views: 0.0ms | ActiveRecord: 1.1ms | Allocations: 832)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m

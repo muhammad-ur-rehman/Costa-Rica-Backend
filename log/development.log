@@ -1,0 +1,35 @@
+Started POST "/graphql" for ::1 at 2023-11-01 20:39:09 +0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"{\n  searchMenus(name: \"Pi\") {\n    id\n    name\n    price\n    createdAt\n  }\n}", "graphql"=>{"query"=>"{\n  searchMenus(name: \"Pi\") {\n    id\n    name\n    price\n    createdAt\n  }\n}"}}
+  [1m[36mMenu Load (2.4ms)[0m  [1m[34mSELECT "menus".* FROM "menus" WHERE (name ILIKE '%Pi%')[0m
+Completed 200 OK in 22ms (Views: 0.1ms | ActiveRecord: 8.1ms | Allocations: 42074)
+
+
+Started POST "/graphql" for ::1 at 2023-11-01 20:40:32 +0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"{\n  menus(sortByPrice: false) {\n    id\n    name\n    price\n    createdAt\n  }\n}", "graphql"=>{"query"=>"{\n  menus(sortByPrice: false) {\n    id\n    name\n    price\n    createdAt\n  }\n}"}}
+  [1m[36mMenu Load (0.6ms)[0m  [1m[34mSELECT "menus".* FROM "menus"[0m
+Completed 200 OK in 9ms (Views: 0.5ms | ActiveRecord: 0.6ms | Allocations: 4637)
+
+
+Started POST "/graphql" for ::1 at 2023-11-01 20:40:39 +0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"{\n  menus(sortByPrice: false) {\n    id\n    name\n    price\n    category\n  }\n}", "graphql"=>{"query"=>"{\n  menus(sortByPrice: false) {\n    id\n    name\n    price\n    category\n  }\n}"}}
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 1372)
+
+
+Started POST "/graphql" for ::1 at 2023-11-01 20:41:09 +0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"{\n  menus(sortByPrice: false) {\n    id\n    name\n    price\n    category\n  }\n}", "graphql"=>{"query"=>"{\n  menus(sortByPrice: false) {\n    id\n    name\n    price\n    category\n  }\n}"}}
+  [1m[36mMenu Load (0.4ms)[0m  [1m[34mSELECT "menus".* FROM "menus"[0m
+Completed 200 OK in 18ms (Views: 0.5ms | ActiveRecord: 5.8ms | Allocations: 9207)
+
+
+Started POST "/graphql" for ::1 at 2023-11-01 20:41:20 +0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"{\n  searchMenus(name: \"Pi\") {\n    id\n    name\n    price\n    category\n  }\n}", "graphql"=>{"query"=>"{\n  searchMenus(name: \"Pi\") {\n    id\n    name\n    price\n    category\n  }\n}"}}
+  [1m[36mMenu Load (0.4ms)[0m  [1m[34mSELECT "menus".* FROM "menus" WHERE (name ILIKE '%Pi%')[0m
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 0.4ms | Allocations: 1372)
+
+
