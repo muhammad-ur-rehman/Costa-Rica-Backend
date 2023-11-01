@@ -29,7 +29,6 @@ Create make sure you have postgresql installed and provide details of database i
 database.yml
 ```
 
-
 After that you can create a database and run seed files by and install any dependencies by command
 
 ```bash
